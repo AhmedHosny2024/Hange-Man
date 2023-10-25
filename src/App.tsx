@@ -59,9 +59,9 @@ function App() {
       alignItems:"center"
     }}>
       <div style={{fontSize:"2rem",textAlign:"center"}}>
-        {win && "Winner 🥳 -Refresh to try again"}
-        {loss && "Nice Try 😉 -Refresh to try again"}
-        Lose Win</div>
+        {win && "Winner 🥳 -Refresh to try again"||
+        loss && "Nice Try 😉 -Refresh to try again"||
+        "Lose or Win"}</div>
       <HngmanDrowing numberOfGuesses={inCorrectLetters.length}/>
       <HangmanWord guessedLetters={guessedLetters} word={wordToGuess} loss={loss}/>
       <div style={{alignSelf:"stretch",margin:"10px"}}>

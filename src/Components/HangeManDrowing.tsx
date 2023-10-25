@@ -9,6 +9,7 @@ export function HngmanDrowing ({ numberOfGuesses }: HangmanDrawingProps) {
         <div style={{
             position:"relative",
             marginLeft:"70px"
+            
         }}>
             {BODY_PARTS.slice(0, numberOfGuesses)}
             <div style={{height:"50px",width:"10px",background:"black",position:"absolute",top:0,right:0}}/>
